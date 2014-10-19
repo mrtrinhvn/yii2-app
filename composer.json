@@ -19,7 +19,11 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
 
-        "harrytang/yii2-dotdotdot": "*"
+        "harrytang/yii2-dotdotdot": "*",
+        "harrytang/yii2-gii": "dev-master",
+        "harrytang/yii2-account": "dev-master",
+        "harrytang/yii2-i18n": "dev-master"
+
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

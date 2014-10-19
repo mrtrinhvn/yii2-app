@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d8dc7f369ace1b1ef4545ef2352d5817",
+    "hash": "654a6434c3e909b09f2f7b9bfb3ece3f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -102,16 +102,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.1.32",
+            "version": "3.1.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "bb776eb7e7be594fa77d5598e6f89d96029a8bac"
+                "reference": "0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/bb776eb7e7be594fa77d5598e6f89d96029a8bac",
-                "reference": "bb776eb7e7be594fa77d5598e6f89d96029a8bac",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d",
+                "reference": "0c6ce85c1bc12e81ecb0df62fbc62db116b7b53d",
                 "shasum": ""
             },
             "require": {
@@ -312,6 +312,46 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "harrytang/yii2-account",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harrytang/yii2-account.git",
+                "reference": "a15a960227d478ffa0c86343d210f213619605b9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harrytang/yii2-account/zipball/a15a960227d478ffa0c86343d210f213619605b9",
+                "reference": "a15a960227d478ffa0c86343d210f213619605b9",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "harrytang\\account\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Tang",
+                    "email": "admin@giaduy.info"
+                }
+            ],
+            "description": "Yii2 Account",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2014-10-17 02:03:55"
+        },
+        {
             "name": "harrytang/yii2-dotdotdot",
             "version": "1.0",
             "source": {
@@ -352,6 +392,86 @@
                 "yii"
             ],
             "time": "2014-04-27 07:33:45"
+        },
+        {
+            "name": "harrytang/yii2-gii",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harrytang/yii2-gii.git",
+                "reference": "7f9b102b121b91f41b34c94ac7ccc060dd6d9487"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harrytang/yii2-gii/zipball/7f9b102b121b91f41b34c94ac7ccc060dd6d9487",
+                "reference": "7f9b102b121b91f41b34c94ac7ccc060dd6d9487",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "harrytang\\gii\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Tang",
+                    "email": "admin@giaduy.info"
+                }
+            ],
+            "description": "Yii2 Gii",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2014-10-15 06:21:47"
+        },
+        {
+            "name": "harrytang/yii2-i18n",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harrytang/yii2-i18n.git",
+                "reference": "9fc43d1b8c1cfc8016bde26ecbbb2a2115c8f55a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harrytang/yii2-i18n/zipball/9fc43d1b8c1cfc8016bde26ecbbb2a2115c8f55a",
+                "reference": "9fc43d1b8c1cfc8016bde26ecbbb2a2115c8f55a",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "harrytang\\i18n\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Tang",
+                    "email": "giaduy@gmail.com"
+                }
+            ],
+            "description": "Yii2 I18N",
+            "keywords": [
+                " i18n",
+                "yii2"
+            ],
+            "time": "2014-10-17 09:03:48"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -938,7 +1058,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "harrytang/yii2-gii": 20,
+        "harrytang/yii2-account": 20,
+        "harrytang/yii2-i18n": 20
+    },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.4.0"

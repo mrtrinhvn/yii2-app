@@ -65,9 +65,15 @@ class SiteController extends Controller
         ];
     }
 
+    public function actionTest()
+    {
+        echo Yii::$app->language;
+        echo Yii::t('app', 'Harry Tang');
+    }
+
     public function actionIndex()
     {
-        
+
         return $this->render('index');
     }
 
