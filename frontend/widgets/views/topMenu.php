@@ -14,14 +14,17 @@ NavBar::begin([
     'options' => [
         'class' => 'navbar-inverse navbar-fixed-top',
     ],
+
 ]);
 
 echo Nav::widget([
     'options' => ['class' => 'navbar-nav'],
+    'encodeLabels'=>false,
     'items' => $leftItems,
 ]);
 echo Nav::widget([
     'options' => ['class' => 'navbar-nav navbar-right'],
+    'encodeLabels'=>false,
     'items' => $rightItems,
 ]);
 NavBar::end();

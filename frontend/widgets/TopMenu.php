@@ -33,7 +33,7 @@ class TopMenu extends \yii\bootstrap\Widget
      */
     public function run()
     {
-        echo $this->render('topMenu', ['leftItems'=>$this->leftItems, 'rightItems'=>$this->rightItems]);
+        echo $this->render('topMenu', ['leftItems' => $this->leftItems, 'rightItems' => $this->rightItems]);
     }
 
     /**
@@ -41,10 +41,21 @@ class TopMenu extends \yii\bootstrap\Widget
      */
     protected function getModuleMenuItems()
     {
+
         /* find modules menu items */
-        $modules = scandir(\Yii::$app->vendorPath . DIRECTORY_SEPARATOR . 'harrytang');
+        $cache = \Yii::$app->cache;
+        $key = 'scandir-vendor-harrytang';
+        $modules = $cache->get($key);
+        if ($modules === false) {
+            $modules = scandir(\Yii::$app->vendorPath . DIRECTORY_SEPARATOR . 'harrytang');
+            $cache->set($key, $modules);
+
+        }
+
+
         $menuFilePath = 'topMenu.php';
         foreach ($modules as $module) {
+
             if (!preg_match('/[\.]+/', $module)) {
                 $moduleMenuFile = \Yii::$app->vendorPath . DIRECTORY_SEPARATOR . 'harrytang' . DIRECTORY_SEPARATOR . $module . DIRECTORY_SEPARATOR . $menuFilePath;
                 if (is_file($moduleMenuFile)) {

@@ -4,7 +4,7 @@ return [
     'language' => 'vi-VN',
     'components' => [
         'cache' => [
-            'class' => 'yii\caching\FileCache',
+            'class' => 'yii\caching\ApcCache',
         ],
         'i18n' => [
             'translations' => [
