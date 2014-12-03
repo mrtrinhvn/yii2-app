@@ -5,6 +5,10 @@
  * @copyright: Grey Neuron
  */
 
+/* @var $leftItems array */
+/* @var $rightItems array */
+/* @var $userItems array */
+
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 
@@ -22,9 +26,11 @@ echo Nav::widget([
     'encodeLabels'=>false,
     'items' => $leftItems,
 ]);
+
+
 echo Nav::widget([
     'options' => ['class' => 'navbar-nav navbar-right'],
     'encodeLabels'=>false,
-    'items' => $rightItems,
+    'items' => array_merge($rightItems, $userItems),
 ]);
 NavBar::end();

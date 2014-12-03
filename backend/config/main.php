@@ -14,8 +14,9 @@ return [
     'modules' => [],
     'components' => [
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'harrytang\account\models\User',
             'enableAutoLogin' => true,
+            'loginUrl'=>['/account/login']
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
