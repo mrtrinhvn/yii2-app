@@ -58,6 +58,7 @@ class TopMenu extends Widget
      */
     protected function getModuleMenuItems()
     {
+
         /* user item */
         if (!Yii::$app->user->isGuest) {
             $this->userItems[0] = [
@@ -69,6 +70,7 @@ class TopMenu extends Widget
 
         /* find modules menu items */
         $cache = \Yii::$app->cache;
+        //$cache->flush();
         $key = 'scandir-vendor-harrytang';
         $modules = $cache->get($key);
         if ($modules === false) {

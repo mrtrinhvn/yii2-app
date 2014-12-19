@@ -33,6 +33,7 @@ Powered by: Grey Neuron (http://www.greyneuron.com)
 <?= $content ?>
 <?php $this->endBody() ?>
 <?= \harrytang\core\ModalLoading::widget() ?>
+<?= \harrytang\core\GoogleAnalytics::widget(['trackingId'=>'']) ?>
 </body>
 </html>
 <?php $this->endPage() ?>

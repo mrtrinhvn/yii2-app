@@ -33,6 +33,9 @@ return [
         'product' => [
             'class' => 'harrytang\product\ProductModule',
         ],
+        'contact' => [
+            'class' => 'harrytang\contact\ContactModule',
+        ],
     ],
 
 
