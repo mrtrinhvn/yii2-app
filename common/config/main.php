@@ -36,6 +36,9 @@ return [
         'contact' => [
             'class' => 'harrytang\contact\ContactModule',
         ],
+        'cms' => [
+            'class' => 'harrytang\cms\CmsModule',
+        ],
     ],
 
 

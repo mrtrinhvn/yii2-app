@@ -29,7 +29,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install the application using the following command:
 
 ~~~
-composer global require "fxp/composer-asset-plugin:1.0.0-beta2"
+composer global require "fxp/composer-asset-plugin:1.0.0"
 composer create-project --prefer-dist --stability=dev harrytang/yii2-app advanced
 composer update
 ~~~

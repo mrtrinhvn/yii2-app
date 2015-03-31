@@ -1,6 +1,8 @@
 <?php
 namespace frontend\controllers;
 
+use Facebook\FacebookRequest;
+use Facebook\FacebookSession;
 use Yii;
 use common\models\LoginForm;
 use frontend\models\PasswordResetRequestForm;
@@ -175,4 +177,6 @@ class SiteController extends Controller
             'model' => $model,
         ]);
     }
+
+
 }
